@@ -113,14 +113,14 @@ const Hero = () => {
               className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
               style={{ animationDelay: "0.3s" }}
             >
-              Atlas: Where Code<br className="hidden sm:inline" />Meets Motion
+              Welcome to<br className="hidden sm:inline" />Lilees Convention Centre
             </h1>
             
             <p 
               style={{ animationDelay: "0.5s" }} 
               className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal text-base sm:text-lg text-left"
             >
-              The humanoid companion that learns and adapts alongside you.
+              Your premier destination for exceptional events, conferences, and celebrations in an inspiring environment.
             </p>
             
             <div 
@@ -128,7 +128,7 @@ const Hero = () => {
               style={{ animationDelay: "0.7s" }}
             >
               <a 
-                href="#get-access" 
+                href="#contact" 
                 className="flex items-center justify-center group w-full sm:w-auto text-center" 
                 style={{
                   backgroundColor: '#FE5C02',
@@ -142,7 +142,7 @@ const Hero = () => {
                   border: '1px solid white',
                 }}
               >
-                Request Access
+                Book Your Event
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
@@ -164,8 +164,8 @@ const Hero = () => {
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
                 <img 
                   ref={imageRef} 
-                  src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" 
-                  alt="Atlas Robot" 
+                  src="/hero-image.jpg" 
+                  alt="Lilees Convention Centre" 
                   className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
                   style={{ transformStyle: 'preserve-3d' }} 
                 />
