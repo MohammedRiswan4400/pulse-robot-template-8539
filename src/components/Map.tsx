@@ -31,7 +31,7 @@ const Map = () => {
             <strong>Lilees Convention Centre</strong><br />
             123 Convention Drive, Downtown District<br />
             City 12345<br />
-            Phone: +1 (555) 123-4567
+            Phone: +91 8138875540
           </div>
         </div>
       </div>

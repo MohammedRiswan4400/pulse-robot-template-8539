@@ -8,7 +8,7 @@ const Footer = () => {
           <a href="mailto:events@lileesconvention.com" className="text-pulse-500 hover:underline">
             events@lileesconvention.com
           </a>{" "}
-          | Phone: +1 (555) 123-4567
+          | Phone: +91 8138875540
         </p>
       </div>
     </footer>;

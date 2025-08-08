@@ -109,7 +109,7 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/hero-image.jpg')",
+                  backgroundImage: "url('/convention_two.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "top center",
                   backgroundBlendMode: "overlay"
@@ -121,11 +121,22 @@ const Gallery = () => {
                   <span className="text-sm font-medium">Grand Ballroom</span>
                 </div>
               </div>
-              
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
+                  <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
+                <div className="
+    inline-flex items-center justify-center
+    px-6 py-4
+    rounded-2xl
+    bg-white/20
+    backdrop-blur-sm
+    text-black
+    border border-white/10
+    shadow-lg
+    ring-1 ring-white/10
+    max-w-lg 
+      ">
+                
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Elegant spaces designed to inspire and impress
+                    Flexible seating and elegant architecture that elevates every event, from conferences to performances.
                   </h3>
                 </div>
               </div>
@@ -145,7 +156,7 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/background-section2.png')",
+                  backgroundImage: "url('/convention_four.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundBlendMode: "overlay"
@@ -157,15 +168,29 @@ const Gallery = () => {
                   <span className="text-sm font-medium">Conference Hall</span>
                 </div>
               </div>
+              <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
+  <div className="
+    inline-flex items-center justify-center
+    px-6 py-4
+    rounded-2xl
+    bg-white/20
+    backdrop-blur-sm
+    text-black
+    border border-white/10
+    shadow-lg
+    ring-1 ring-white/10
+    max-w-lg 
+      ">
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-0">
+        State-of-the-art technology and amenities to ensure a seamless experience for every attendee.
+      </h3>
+    </div>
+  </div>
+
               
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Modern facilities equipped with cutting-edge technology
-                  </h3>
-                </div>
-              </div>
+            
             </div>
+           
             
             {/* Third Card */}
             <div 
@@ -181,7 +206,7 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/background-section3.png')",
+                  backgroundImage: "url('/convention_seven.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "bottom center",
                   backgroundBlendMode: "overlay"
@@ -189,18 +214,37 @@ const Gallery = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-black">
                   <span className="text-sm font-medium">Outdoor Terrace</span>
                 </div>
               </div>
+    <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
+              <div className="
+    inline-flex items-center justify-center
+    px-6 py-4
+    rounded-2xl
+    bg-white/20
+    backdrop-blur-sm
+    text-black
+    border border-white/10
+    shadow-lg
+    ring-1 ring-white/10
+    max-w-lg
+      ">
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold leading-tight mb-0">
+        Spacious auditorium with exceptional acoustics, designed for human connection and impactful presentations.
+      </h3>
+    </div>
+    </div> 
+  {/* </div> */}
               
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
+              {/* <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
                     Breathtaking views that create <span className="text-[#FC4D0A]">unforgettable moments</span>
                   </h3>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

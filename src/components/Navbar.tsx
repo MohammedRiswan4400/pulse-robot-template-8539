@@ -52,11 +52,11 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Pulse Robot"
+          aria-label="Lilees Convention"
         >
           <img 
             src="/logo.svg" 
-            alt="Pulse Robot Logo" 
+            alt="Lilees Convention Logo" 
             className="h-7 sm:h-8" 
           />
         </a>
@@ -78,6 +78,7 @@ const Navbar = () => {
           <a href="#events" className="nav-link">Events</a>
           <a href="#gallery" className="nav-link">Gallery</a>
           <a href="#contact" className="nav-link">Contact</a>
+          <a href="#map" className="nav-link">Map</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -157,6 +158,16 @@ const Navbar = () => {
             }}
           >
             Contact
+          </a>
+           <a 
+            href="#map" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Map
           </a>
         </nav>
       </div>
