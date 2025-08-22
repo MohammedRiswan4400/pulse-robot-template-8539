@@ -10,7 +10,7 @@ const About = () => {
             <span>About Us</span>
           </div>
           <h2 className="section-title mb-3 sm:mb-4">
-            Welcome to Lilees<br className="hidden sm:block" />Convention Centre
+            Welcome to Lilies<br className="hidden sm:block" />Convention Centre
           </h2>
           <p className="section-subtitle mx-auto">
             A premier venue that combines elegance, functionality, and exceptional service to create unforgettable experiences.
@@ -22,7 +22,7 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-900">Our Story</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                For over two decades, Lilees Convention Centre has been the cornerstone of exceptional events in our community. 
+                For over two decades, Lilies Convention Centre has been the cornerstone of exceptional events in our community. 
                 Our commitment to excellence has made us the preferred choice for corporate conferences, trade shows, 
                 weddings, and social gatherings.
               </p>
@@ -32,7 +32,7 @@ const About = () => {
               <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               <p className="text-gray-600 text-base leading-relaxed">
                 We strive to provide an inspiring environment where meaningful connections are made, 
-                ideas are shared, and memories are created. Every event at Lilees is crafted with 
+                ideas are shared, and memories are created. Every event at Lilies is crafted with 
                 attention to detail and personalized service.
               </p>
             </div>
@@ -51,11 +51,13 @@ const About = () => {
           
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="/convention_six.jpg"
-                alt="Lilees Convention Centre Interior" 
+              { <img 
+                src="/a-side-view.jpg"
+                alt="Lilies Convention Centre Interior" 
                 className="w-full h-full object-cover"
-              />
+              /> }
+              {/* <img src="/dict/convention_six.jpg" alt="Convention Interior" /> */}
+
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-pulse-gradient opacity-20 blur-3xl rounded-full"></div>
           </div>

@@ -91,7 +91,7 @@ const Gallery = () => {
             </div>
             
             <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
-              Experience Lilees
+              Experience Lilies
             </h2>
           </div>
           
@@ -109,7 +109,7 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/convention_two.jpg')",
+                  backgroundImage: "url('/a-1.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "top center",
                   backgroundBlendMode: "overlay"
@@ -156,7 +156,7 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/convention_four.jpg')",
+                  backgroundImage: "url('/a-2.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundBlendMode: "overlay"
@@ -206,7 +206,7 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/convention_seven.jpg')",
+                  backgroundImage: "url('/a-3.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "bottom center",
                   backgroundBlendMode: "overlay"

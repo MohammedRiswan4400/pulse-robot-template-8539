@@ -22,13 +22,13 @@ const Map = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Lilees Convention Centre Location"
+            title="Lilies Convention Centre Location"
           ></iframe>
         </div>
         
         <div className="mt-6 text-center">
           <div className="text-gray-600">
-            <strong>Lilees Convention Centre</strong><br />
+            <strong>Lilies Convention Centre</strong><br />
             123 Convention Drive, Downtown District<br />
             City 12345<br />
             Phone: +91 8138875540

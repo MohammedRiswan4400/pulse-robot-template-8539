@@ -19,7 +19,7 @@ const Events = () => {
         <div className="max-w-5xl pl-4 sm:pl-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display leading-tight mb-8 sm:mb-12">
             <span className="block bg-clip-text text-transparent bg-[url('/text-mask-image.jpg')] bg-cover bg-center">
-              From intimate gatherings to grand celebrations, Lilees Convention Centre transforms your vision into reality. 
+              From intimate gatherings to grand celebrations, Lilies Convention Centre transforms your vision into reality. 
               Our experienced team works closely with you to ensure every detail exceeds expectations, creating unforgettable 
               moments for you and your guests.
             </span>

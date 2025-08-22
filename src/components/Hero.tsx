@@ -91,7 +91,7 @@ const Hero = () => {
       className="overflow-hidden relative bg-cover" 
       id="hero" 
       style={{
-        backgroundImage: 'url("/Header-background.webp")',
+        // backgroundImage: 'url("/Header-background.webp")',
         backgroundPosition: 'center 30%', 
         padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
       }}
@@ -113,7 +113,7 @@ const Hero = () => {
               className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
               style={{ animationDelay: "0.3s" }}
             >
-              Welcome to<br className="hidden sm:inline" />Lilees Convention Centre
+              Welcome to<br className="hidden sm:inline" />Lilies Convention Centre
             </h1>
             
             <p 
@@ -164,8 +164,8 @@ const Hero = () => {
               <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
                 <img 
                   ref={imageRef} 
-                  src="/convention_one.jpg" 
-                  alt="Lilees Convention Centre" 
+                  src="/a-interiror.jpg" 
+                  alt="Lilies Convention Centre" 
                   className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
                   style={{ transformStyle: 'preserve-3d' }} 
                 />

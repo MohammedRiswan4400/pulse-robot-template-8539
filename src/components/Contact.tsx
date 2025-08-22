@@ -14,7 +14,7 @@ const Contact = () => {
             Let's Plan Your<br className="hidden sm:block" />Perfect Event
           </h2>
           <p className="section-subtitle mx-auto">
-            Get in touch with our experienced event team to start planning your memorable occasion at Lilees Convention Centre.
+            Get in touch with our experienced event team to start planning your memorable occasion at Lilies Convention Centre.
           </p>
         </div>
         
@@ -40,7 +40,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
-                    <div className="text-gray-600">events@lileesconvention.com</div>
+                    <div className="text-gray-600">events@liliesconvention.com</div>
                   </div>
                 </div>
                 

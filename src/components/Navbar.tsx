@@ -52,11 +52,11 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Lilees Convention"
+          aria-label="Lilies Convention"
         >
           <img 
             src="/logo.svg" 
-            alt="Lilees Convention Logo" 
+            alt="Lilies Convention Logo" 
             className="h-7 sm:h-8" 
           />
         </a>
