@@ -15,23 +15,23 @@ const Map = () => {
         
         <div className="w-full h-96 rounded-2xl overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5273969843934!2d-74.0059413843531!3d40.71427597932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e8db0a7%3A0xd0236d5c45b4b347!2sOne%20World%20Trade%20Center%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2s!4v1620309452321!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.064581193823!2d76.1131661!3d10.87951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c917c937f8c7%3A0x3f0abd8e428f9fb8!2sWhite%20Lilies%20Convention%20Center%20Kodumudi!5e0!3m2!1sen!2s!4v1724490000000!5m2!1sen!2s"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Lilies Convention Centre Location"
+            title="White Lilies Convention Centre Location"
           ></iframe>
         </div>
         
         <div className="mt-6 text-center">
           <div className="text-gray-600">
-            <strong>Lilies Convention Centre</strong><br />
+            <strong>White Lilies Convention Centre</strong><br />
             123 Convention Drive, Downtown District<br />
             City 12345<br />
-            Phone: +91 8138875540
+            Phone: +91 8138845540
           </div>
         </div>
       </div>

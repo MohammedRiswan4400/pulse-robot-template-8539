@@ -52,13 +52,17 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Lilies Convention"
+          aria-label="White Lilies Convention"
         >
-          <img 
-            src="/logo.svg" 
-            alt="Lilies Convention Logo" 
-            className="h-7 sm:h-8" 
-          />
+          {/* <img 
+            // src="/logo.svg" 
+            src="/logo-transparant-remove.png" 
+            alt="White Lilies Convention Logo" 
+            className="h-12 sm:h-12" 
+          /> */}
+          <h1 className="text-xl sm:text-2xl font-bold">
+White Lilies Convention Center
+</h1>
         </a>
 
         {/* Desktop Navigation */}

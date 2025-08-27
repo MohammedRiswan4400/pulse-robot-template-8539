@@ -1,7 +1,14 @@
-import React from "react";
+import TypChooser from './ui/type-chooser';
+import React, { useState } from 'react';
+
 import { ArrowRight, Phone, Mail, MapPin, Clock } from "lucide-react";
 
+
 const Contact = () => {
+  const [selectedOption, setSelectedOption] = useState("no"); // default selected is "no"
+  const [eventType, setEventType] = useState("wedding");  // <-- move here
+
+  const handleOptionChange = (e) => setSelectedOption(e.target.value);
   return (
     <section className="py-12 sm:py-16 md:py-20 relative bg-gray-50" id="contact">
       <div className="section-container">
@@ -14,10 +21,10 @@ const Contact = () => {
             Let's Plan Your<br className="hidden sm:block" />Perfect Event
           </h2>
           <p className="section-subtitle mx-auto">
-            Get in touch with our experienced event team to start planning your memorable occasion at Lilies Convention Centre.
+            Get in touch with our experienced event team to start planning your memorable occasion at White Lilies Convention Centre.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
@@ -30,20 +37,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Phone</div>
-                    <div className="text-gray-600">+91 8138875540</div>
+                    <div className="text-gray-600">+91 8138845540</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-pulse-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-5 h-5 text-pulse-500" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">Email</div>
+                    <div className="font-semibold text-gray-900">address</div>
                     <div className="text-gray-600">events@liliesconvention.com</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="w-10 h-10 bg-pulse-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-5 h-5 text-pulse-500" />
@@ -53,9 +60,9 @@ const Contact = () => {
                     <div className="text-gray-600">123 Convention Drive<br />Downtown District, City 12345</div>
                   </div>
                 </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-pulse-100 rounded-lg flex items-center justify-center flex-shrink-0">
+
+                {/* <div className="flex items-start space-x-4">
+                <div className="w-10 h-10 bg-pulse-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Clock className="w-5 h-5 text-pulse-500" />
                   </div>
                   <div>
@@ -65,17 +72,17 @@ const Contact = () => {
                       Saturday - Sunday: 10:00 AM - 4:00 PM
                     </div>
                   </div>
-                </div>
+                </div>  */}
               </div>
             </div>
-            
+
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h4 className="font-semibold text-gray-900 mb-4">Quick Booking</h4>
               <p className="text-gray-600 mb-4">
                 Ready to book? Call our event specialists for immediate assistance with your booking needs.
               </p>
-              <a 
-                href="tel:+15551234567" 
+              <a
+                href="tel:+91 8138845540"
                 className="inline-flex items-center justify-center group text-center bg-pulse-500 hover:bg-pulse-600 text-white rounded-full px-6 py-3 transition-colors duration-300"
               >
                 Call Now
@@ -83,25 +90,14 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Request Information</h3>
             <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                    First Name
-                  </label>
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-pulse-500 transition-colors"
-                    placeholder="Your first name"
-                  />
-                </div>
-                <div>
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4"> */}
+
+              {/* <div>
                   <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
                     Last Name
                   </label>
@@ -112,22 +108,35 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-pulse-500 transition-colors"
                     placeholder="Your last name"
                   />
-                </div>
-              </div>
-              
+                </div> */}
+              {/* </div> */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email Address
+                <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                  First Name
                 </label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-pulse-500 transition-colors"
-                  placeholder="your.email@example.com"
+                  placeholder="Your first name"
                 />
               </div>
-              
+
+              <div>
+                <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
+                  Address
+                </label>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows={4}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-pulse-500 transition-colors"
+                  placeholder="Tell us about your event..."
+                ></textarea>
+              </div>
+
+
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                   Phone Number
@@ -137,10 +146,10 @@ const Contact = () => {
                   id="phone"
                   name="phone"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pulse-500 focus:border-pulse-500 transition-colors"
-                  placeholder="(555) 123-4567"
+                  placeholder="+91 8138845540"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="eventType" className="block text-sm font-medium text-gray-700 mb-2">
                   Event Type
@@ -159,8 +168,56 @@ const Contact = () => {
                   <option value="other">Other</option>
                 </select>
               </div>
-              
+
               <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Reception ?
+                </label>
+                <div className="mt-4">
+                  <TypChooser
+                    selectedValue={eventType}
+                    labels={['No', 'Yes']}
+                    options={['no', 'yes']}
+                    onChanged={setEventType}
+                  />
+                </div>
+              </div>
+              {/* <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Reception ?
+                </label>
+                <div className="flex space-x-4">
+                  
+                  <label className="inline-flex items-center">
+                    <input
+                      type="radio"
+                      name="option"
+                      value="no"
+                      className="form-radio accent-orange-500"  // 'accent-orange-500' sets the radio color to orange
+                      onChange={handleOptionChange}
+                      checked={selectedOption === "no"}
+                    />
+                    <span className="ml-2 text-gray-700">No</span>
+                  </label>
+                 
+                  <label className="inline-flex items-center">
+
+                    <input
+                      type="radio"
+                      name="option"
+                      value="yes"
+                      className="form-radio accent-orange-500"  // 'accent-orange-500' sets the radio color to orange
+                      onChange={handleOptionChange}
+                      checked={selectedOption === "yes"}
+                    />
+                    <span className="ml-2 text-gray-700">Yes</span>
+                  </label>
+                </div>
+              </div> */}
+
+
+
+              {/* <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Message
                 </label>
@@ -172,7 +229,7 @@ const Contact = () => {
                   placeholder="Tell us about your event..."
                 ></textarea>
               </div>
-              
+               */}
               <button
                 type="submit"
                 className="w-full bg-pulse-500 hover:bg-pulse-600 text-white rounded-lg px-6 py-3 font-medium transition-colors duration-300 flex items-center justify-center group"
@@ -187,5 +244,7 @@ const Contact = () => {
     </section>
   );
 };
+
+
 
 export default Contact;

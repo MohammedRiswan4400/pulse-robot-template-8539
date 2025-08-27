@@ -10,7 +10,10 @@ const MadeByHumans = () => {
           backgroundImage: "url('/background-section3.png')"
         }}>
             <div className="flex items-center text-white">
-              <img src="/logo.svg" alt="Lilies Convention Logo" className="h-5 sm:h-6 w-auto mr-3 invert" />
+              <img 
+              src="/logo-transparant.jpg"
+              // src="/logo.svg"
+               alt="White Lilies Convention Logo" className="h-5 sm:h-6 w-auto mr-3 invert" />
               <span className="text-white text-xl font-medium">
             </span>
             </div>

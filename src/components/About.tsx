@@ -22,9 +22,7 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-gray-900">Our Story</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                For over two decades, Lilies Convention Centre has been the cornerstone of exceptional events in our community. 
-                Our commitment to excellence has made us the preferred choice for corporate conferences, trade shows, 
-                weddings, and social gatherings.
+                For over seven years, White Lilies Convention Centre has been a trusted venue for memorable events. From corporate conferences and trade shows to weddings and celebrations, we provide the perfect setting with a commitment to quality and care.
               </p>
             </div>
             
@@ -39,7 +37,7 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-pulse-500 mb-2">20+</div>
+                <div className="text-3xl font-bold text-pulse-500 mb-2">7+</div>
                 <div className="text-sm text-gray-600">Years of Excellence</div>
               </div>
               <div className="text-center">
@@ -53,7 +51,7 @@ const About = () => {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               { <img 
                 src="/a-side-view.jpg"
-                alt="Lilies Convention Centre Interior" 
+                alt="White Lilies Convention Centre Interior" 
                 className="w-full h-full object-cover"
               /> }
               {/* <img src="/dict/convention_six.jpg" alt="Convention Interior" /> */}

@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Lilies Convention
+				// Custom colors for White Lilies Convention
 				pulse: {
 					"50": "#fff7ed",
 					"100": "#ffedd5",

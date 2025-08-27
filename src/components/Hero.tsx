@@ -113,7 +113,7 @@ const Hero = () => {
               className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
               style={{ animationDelay: "0.3s" }}
             >
-              Welcome to<br className="hidden sm:inline" />Lilies Convention Centre
+              Welcome to<br className="hidden sm:inline" />White Lilies Convention Centre
             </h1>
             
             <p 
@@ -165,7 +165,7 @@ const Hero = () => {
                 <img 
                   ref={imageRef} 
                   src="/a-interiror.jpg" 
-                  alt="Lilies Convention Centre" 
+                  alt="White Lilies Convention Centre" 
                   className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
                   style={{ transformStyle: 'preserve-3d' }} 
                 />
