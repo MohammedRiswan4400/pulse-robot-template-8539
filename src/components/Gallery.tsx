@@ -27,21 +27,21 @@ const Gallery = () => {
     if (sectionRef.current) {
       observer.observe(sectionRef.current);
     }
-    
+
     const handleScroll = () => {
       if (!ticking.current) {
         window.requestAnimationFrame(() => {
           if (!sectionRef.current) return;
-          
+
           const sectionRect = sectionRef.current.getBoundingClientRect();
           const viewportHeight = window.innerHeight;
           const totalScrollDistance = viewportHeight * 2;
-          
+
           let progress = 0;
           if (sectionRect.top <= 0) {
             progress = Math.min(1, Math.max(0, Math.abs(sectionRect.top) / totalScrollDistance));
           }
-          
+
           if (progress >= 0.66) {
             setActiveCardIndex(2);
           } else if (progress >= 0.33) {
@@ -49,17 +49,17 @@ const Gallery = () => {
           } else {
             setActiveCardIndex(0);
           }
-          
+
           ticking.current = false;
         });
-        
+
         ticking.current = true;
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       if (sectionRef.current) {
@@ -73,9 +73,9 @@ const Gallery = () => {
   const isThirdCardVisible = activeCardIndex >= 2;
 
   return (
-    <div 
-      ref={sectionRef} 
-      className="relative" 
+    <div
+      ref={sectionRef}
+      className="relative"
       style={{ height: '300vh' }}
     >
       <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="gallery">
@@ -89,16 +89,16 @@ const Gallery = () => {
                 <span>Gallery</span>
               </div>
             </div>
-            
+
             <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
               Experience Lilies
             </h2>
           </div>
-          
+
           <div ref={cardsContainerRef} className="relative flex-1 perspective-1000">
             {/* First Card */}
-            <div 
-              className={`absolute inset-0 overflow-hidden shadow-xl ${isFirstCardVisible ? 'animate-card-enter' : ''}`} 
+            <div
+              className={`absolute inset-0 overflow-hidden shadow-xl ${isFirstCardVisible ? 'animate-card-enter' : ''}`}
               style={{
                 ...cardStyle,
                 zIndex: 10,
@@ -109,20 +109,20 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/a-1.jpg')",
+                  backgroundImage: "url('/a-front-view.jpg')",
                   backgroundSize: "cover",
-                  backgroundPosition: "top center",
+                  backgroundPosition: "center",
                   backgroundBlendMode: "overlay"
                 }}
               ></div>
-              
+
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">Grand Ballroom</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-black">
+                  <span className="text-sm font-medium">Outdoor</span>
                 </div>
               </div>
-                  <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
-                <div className="
+              <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
+                {/* <div className="
     inline-flex items-center justify-center
     px-6 py-4
     rounded-2xl
@@ -134,17 +134,17 @@ const Gallery = () => {
     ring-1 ring-white/10
     max-w-lg 
       ">
-                
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+
+                  {/* <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold leading-tight mb-4">
                     Flexible seating and elegant architecture that elevates every event, from conferences to performances.
-                  </h3>
-                </div>
+                  </h3> */}
+                {/* </div> */} 
               </div>
             </div>
-            
+
             {/* Second Card */}
-            <div 
-              className={`absolute inset-0 overflow-hidden shadow-xl ${isSecondCardVisible ? 'animate-card-enter' : ''}`} 
+            <div
+              className={`absolute inset-0 overflow-hidden shadow-xl ${isSecondCardVisible ? 'animate-card-enter' : ''}`}
               style={{
                 ...cardStyle,
                 zIndex: 20,
@@ -156,20 +156,20 @@ const Gallery = () => {
               <div
                 className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
                 style={{
-                  backgroundImage: "url('/a-2.jpg')",
+                  backgroundImage: "url('/a-9.jpg')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundBlendMode: "overlay"
                 }}
               ></div>
-              
+
               <div className="absolute top-4 right-4 z-20">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
                   <span className="text-sm font-medium">Conference Hall</span>
                 </div>
               </div>
               <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
-  <div className="
+                {/* <div className="
     inline-flex items-center justify-center
     px-6 py-4
     rounded-2xl
@@ -181,71 +181,25 @@ const Gallery = () => {
     ring-1 ring-white/10
     max-w-lg 
       ">
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-0">
-        State-of-the-art technology and amenities to ensure a seamless experience for every attendee.
-      </h3>
-    </div>
-  </div>
-
-              
-            
-            </div>
-           
-            
-            {/* Third Card */}
-            <div 
-              className={`absolute inset-0 overflow-hidden shadow-xl ${isThirdCardVisible ? 'animate-card-enter' : ''}`} 
-              style={{
-                ...cardStyle,
-                zIndex: 30,
-                transform: `translateY(${isThirdCardVisible ? activeCardIndex === 2 ? '15px' : '0' : '200px'}) scale(1)`,
-                opacity: isThirdCardVisible ? 1 : 0,
-                pointerEvents: isThirdCardVisible ? 'auto' : 'none'
-              }}
-            >
-              <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
-                style={{
-                  backgroundImage: "url('/a-3.jpg')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "bottom center",
-                  backgroundBlendMode: "overlay"
-                }}
-              ></div>
-              
-              <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-black">
-                  <span className="text-sm font-medium">Outdoor Terrace</span>
-                </div>
+                  {/* <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold leading-tight mb-0">
+                    State-of-the-art technology and amenities to ensure a seamless experience for every attendee.
+                  </h3> */}
+                {/* </div> */} 
               </div>
-    <div className="absolute left-4 top-1/2 -translate-y-1/2 z-20">
-              <div className="
-    inline-flex items-center justify-center
-    px-6 py-4
-    rounded-2xl
-    bg-white/20
-    backdrop-blur-sm
-    text-black
-    border border-white/10
-    shadow-lg
-    ring-1 ring-white/10
-    max-w-lg
-      ">
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold leading-tight mb-0">
-        Spacious auditorium with exceptional acoustics, designed for human connection and impactful presentations.
-      </h3>
-    </div>
-    </div> 
-  {/* </div> */}
-              
-              {/* <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Breathtaking views that create <span className="text-[#FC4D0A]">unforgettable moments</span>
-                  </h3>
-                </div>
-              </div> */}
             </div>
+
+
+            {/* Third Card */}
+            {/* <video
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/a-parking-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video> */}
           </div>
         </div>
       </section>

@@ -1,6 +1,10 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import { supabase } from "@/lib/supabaseClient";  
 const About = () => {
+ 
+
+ 
+ 
   return (
     <section className="py-12 sm:py-16 md:py-20 relative bg-white" id="about">
       <div className="section-container">
@@ -15,8 +19,11 @@ const About = () => {
           <p className="section-subtitle mx-auto">
             A premier venue that combines elegance, functionality, and exceptional service to create unforgettable experiences.
           </p>
+
+          {/* ✅ Supabase status will show here */}
+          <p className="mt-4 text-sm text-gray-600">{status}</p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-4">
@@ -41,7 +48,7 @@ const About = () => {
                 <div className="text-sm text-gray-600">Years of Excellence</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-pulse-500 mb-2">5000+</div>
+                <div className="text-3xl font-bold text-pulse-500 mb-2">3000+</div>
                 <div className="text-sm text-gray-600">Successful Events</div>
               </div>
             </div>
@@ -49,13 +56,11 @@ const About = () => {
           
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              { <img 
+              <img 
                 src="/a-side-view.jpg"
                 alt="White Lilies Convention Centre Interior" 
                 className="w-full h-full object-cover"
-              /> }
-              {/* <img src="/dict/convention_six.jpg" alt="Convention Interior" /> */}
-
+              />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-pulse-gradient opacity-20 blur-3xl rounded-full"></div>
           </div>

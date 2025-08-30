@@ -29,8 +29,9 @@ const Map = () => {
         <div className="mt-6 text-center">
           <div className="text-gray-600">
             <strong>White Lilies Convention Centre</strong><br />
-            123 Convention Drive, Downtown District<br />
-            City 12345<br />
+            Kodumudi, 676552<br />
+            Malappuram<br/>
+            Kerala<br/> 
             Phone: +91 8138845540
           </div>
         </div>
